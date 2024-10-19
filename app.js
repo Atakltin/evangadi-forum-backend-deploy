@@ -16,7 +16,7 @@ const answerRoutes = require("./routes/answers.routes");
 const auth = require("./middleware/auth.middleware");
 
 app.use("/api/users", usersRoutes);
-app.use("/api/questions", auth, questionsRoutes);
+app.use("/api/questions", auth, questionsRoutes),
 app.use("/api/answers", auth, answerRoutes);
 
 (async () => {
